@@ -1,0 +1,19 @@
+{% extends "Master.html" %}
+
+
+{% block title %}
+  all expneses
+{% endblock %}
+
+{% block content %}
+
+{% for x in mydata %}
+  
+<p>date: {{x.date }}</p>
+<p>Location: {{x.Location }}</p>
+<p>salary : {{x.salary }}</p>
+<p>description : {{x.description }}</p>
+
+{% endfor %}
+ 
+{%endblock%}
